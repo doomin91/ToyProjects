@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+.display{
+    background: black;
+    border: 0px;
+    color: white;
+    text-align: right;
+    width:280px;
+    height: 50px;
+    font-size: 22px;
+    outline: 0px;
+}
+
+.btnColor, .btnRight, .btnC{
+    width: 90px;
+    height: 50px;
+    font-size:22px;
+    font-family: 'Nanum Gothic';
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    background: #363439;
+    border: 0px;
+    border-radius: 12px;
+    margin: 1px;
+    outline: 0px;
+}
+
+.btnRight{
+    background: #fe8e00;
+}
+
+.btnC{
+    background: #a7aab1;
+}
+
+.btnZero{
+    width:185px;
+}

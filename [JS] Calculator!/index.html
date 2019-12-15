@@ -1,0 +1,47 @@
+<Html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="src/index.css" />
+    </head>
+    <body>
+        <form class="js-cal">
+            <table class="js-table">
+                <tr>
+                    <td colspan="3"><input class="display" type="text" /></td>
+                    <td><input type="button" onmouseup="resetUp(this)" onmousedown="resetDown(this)" onclick="reset()" class="btnC" value="C" /></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(7)" class="btnColor" value="7" /></td>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(8)" class="btnColor" value="8" /></td>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(9)" class="btnColor" value="9" /></td>
+                    <td><input type="button" onmouseup="orangeUp(this)" onmousedown="orangeDown(this)" onclick="add('+')" class="btnRight" value="+" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(4)" class="btnColor" value="4" /></td>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(5)" class="btnColor" value="5" /></td>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(6)" class="btnColor" value="6" /></td>
+                    <td><input type="button" onmouseup="orangeUp(this)" onmousedown="orangeDown(this)" onclick="add('-')" class="btnRight" value="-" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(1)" class="btnColor" value="1" /></td>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(2)" class="btnColor" value="2" /></td>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(3)" class="btnColor" value="3" /></td>
+                    <td><input type="button" onmouseup="orangeUp(this)" onmousedown="orangeDown(this)" onclick="add('*')" class="btnRight" value="*" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="add(0)" class="btnColor btnZero" value="0" /></td>
+                    <td><input type="button" onmouseup="grayUp(this)" onmousedown="grayDown(this)" onclick="calculate()" class="btnColor" value="=" /></td>
+                    <td><input type="button" onmouseup="orangeUp(this)" onmousedown="orangeDown(this)" onclick="add('/')" class="btnRight" value="/" /></td>
+                </tr>
+                
+            </table>
+        </form>
+
+        <script src="src/cal.js"></script>
+    </body>
+</Html>
